@@ -25,7 +25,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={children === 'Redeem Bonds' ? '/redeemBonds' : '#'}>
+    href={children === 'Redeem Bonds' ? '/redeemBonds' : 'Buy Bonds' ? '/buy' : 'View Bonds' ? './view' : '#'}>
     {children}
   </Link>
 );
@@ -102,14 +102,16 @@ export default function Navbar() {
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <HStack spacing={8} alignItems={'center'}>
-            <Box>Crypto Bonds Project</Box>
+            <Box><Link href="./"> Crypto Bonds Project </Link></Box>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+                
+             
+              <Link href='./view'>View Bonds</Link>
+              <Link href='./buy'>Buy Bonds</Link>
+              <Link href='./redeemBonds'>Redeem Bonds</Link>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>

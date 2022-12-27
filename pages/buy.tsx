@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from 'next/link';
 //let provider = new ethers.providers.Web3Provider(window.ethereum);
 //let signer = provider.getSigner();
+import Navbar from '../src/components/navbar';
 
 export default function Buy() {
 
@@ -38,6 +39,9 @@ export default function Buy() {
     
 
     return (
+      <>
+      <Navbar/>
+
         <div className={styles.container}>
 
         <main className={styles.main}>
@@ -93,5 +97,6 @@ export default function Buy() {
         </main>
         
       </div>
+      </>
     )
 }
