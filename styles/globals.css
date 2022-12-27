@@ -15,11 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-.ModalBody {
-  justify-Content : center;
-  display: flex; 
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

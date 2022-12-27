@@ -19,23 +19,22 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Insert your part into {' '}
-          pages/index.tsx
+          
         </p>
 
         <div className={styles.grid}>
-          <a href="#" className={styles.card}>
+          <a href="./view" className={styles.card}>
             <h2>View Bonds &rarr;</h2>
             <p>Users can view all the available bonds on the market</p>
           </a>
 
-          <a href="#"  className={styles.card}>
+          <a href="./buy"  className={styles.card}>
             <h2>Buy Bonds &rarr;</h2>
             <p>Users can buy bonds available on the market</p>
           </a>
 
           <a
-            href="#" 
+            href="./redeemBonds" 
             className={styles.card}
           >
             <h2>Redeem Bonds &rarr;</h2>
