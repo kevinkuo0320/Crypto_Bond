@@ -41,7 +41,7 @@ export default function Buy() {
     return (
       <>
       <Navbar/>
-    
+
         <div className={styles.container}>
 
         <main className={styles.main}>
